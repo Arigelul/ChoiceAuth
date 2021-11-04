@@ -2,7 +2,7 @@
 
 namespace ChoiceA.Migrations
 {
-    public partial class Init : Migration
+    public partial class custom_migr2 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
