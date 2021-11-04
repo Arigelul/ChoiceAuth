@@ -1,0 +1,23 @@
+﻿@model IEnumerable<ChoiceA.Models.Student>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Students</h1>
+
+<div>
+    @foreach (var stud in Model)
+    {
+        <ul>
+            <li>
+                <a asp-action="Select" asp-route-id="@stud.Id">
+                    @Html.DisplayFor(modelItem => stud.Name)
+                    (@Html.DisplayFor(modelItem => stud.Group))
+                </a>
+            </li>
+        </ul>
+    }
+</div>
+
+<img src="123.png" />
